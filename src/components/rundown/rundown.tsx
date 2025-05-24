@@ -1,8 +1,8 @@
 const Rundown = () => {
   return (
-    <div className="min-h-screen bg-invitation-night text-white">
-      <div className="m-8 flex items-center justify-center">
-        <div className="space-y-6 border border-[#CCA482] bg-invitation-night p-8">
+    <div className="flex min-h-screen items-center justify-center bg-invitation-night text-white">
+      <div className="flex items-center justify-center">
+        <div className="m-8 space-y-6 border border-[#CCA482] bg-invitation-night p-8">
           <div>
             <span className="text-2xl font-extrabold capitalize">
               The Evening&apos;s Composition
