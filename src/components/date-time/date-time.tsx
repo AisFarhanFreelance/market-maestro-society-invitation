@@ -66,6 +66,7 @@ const DateTime = () => {
           </AnimatedElement>
         </div>
       </div>
+      <div className="pointer-events-none absolute bottom-0 left-0 h-72 w-full bg-gradient-to-t from-[#2E4366] to-transparent" />
     </div>
   );
 };
