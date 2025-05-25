@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import SyailendraLogo from "/public/assets/images/syailendra-logo.svg";
 
@@ -46,9 +47,11 @@ const EventInvitation = () => {
 
       <div className="flex justify-center">
         <div className="rounded-full bg-gradient-to-r from-white/50 to-white/20 p-[2px]">
-          <button className="rounded-full bg-[#2d4163] px-8 py-2 font-kaisei text-base text-white uppercase transition hover:bg-[#3b4d70]">
-            Open Invitation
-          </button>
+          <Link href="/main">
+            <button className="rounded-full bg-[#2d4163] px-8 py-2 font-kaisei text-base text-white uppercase transition hover:bg-[#3b4d70]">
+              Open Invitation
+            </button>
+          </Link>
         </div>
       </div>
     </div>
