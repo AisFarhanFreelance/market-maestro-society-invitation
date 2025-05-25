@@ -41,10 +41,10 @@ const MusicPlayer = () => {
         loop
       />
       <div
-        className="fixed right-2 bottom-3 z-50 cursor-pointer"
+        className="fixed right-2 bottom-50 z-50 cursor-pointer"
         onClick={togglePlay}
       >
-        <div className="relative text-white">
+        <div className="relative flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-[#2E4366] bg-white text-[#2E4366]">
           {isPlaying ? (
             <Disc3
               className="animate-spin"
