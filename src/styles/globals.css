@@ -8,6 +8,12 @@
   --color-invitation-night: var(--night);
   --font-kaisei: var(--font-kaisei-tokumin);
 
+  /** Font Families  */
+  --font-amoresa: "Amoresa", sans-serif;
+  --font-avenir: "Avenir Next", sans-serif;
+  --font-tex-gyre-termes: "TeX Gyre Termes", serif;
+  /** Font Families  */
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
