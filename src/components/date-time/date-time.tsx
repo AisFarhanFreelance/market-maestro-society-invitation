@@ -2,7 +2,15 @@ import Link from "next/link";
 
 const DateTime = () => {
   return (
-    <div className="relative min-h-screen bg-invitation-night text-white">
+    <div
+      className="relative min-h-screen bg-invitation-night text-white"
+      style={{
+        backgroundColor: "#2E4366",
+        backgroundImage:
+          "linear-gradient(to right, #586984, #586984 7.5px, #2E4366 7.5px, #2E4366)",
+        backgroundSize: "15px 100%",
+      }}
+    >
       {/* <Image
         src={backgroundImage}
         alt="Vintage damask pattern background"
@@ -11,8 +19,14 @@ const DateTime = () => {
         priority
       /> */}
       <div className="absolute inset-0 m-8 flex items-center justify-center text-center">
-        <div className="inline-block bg-gradient-to-bl from-[#CCA482] to-[#5B4231] p-[1px]">
-          <div className="space-y-6 bg-invitation-night p-8 text-white">
+        <div
+          className="inline-block from-[#CCA482] to-[#5B4231] p-[1px]"
+          style={{
+            backgroundImage: 'url("/assets/images/venue-element.svg")',
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="space-y-6 p-8 text-black">
             <div className="text-2xl font-extrabold capitalize">
               Event Particulars
             </div>
