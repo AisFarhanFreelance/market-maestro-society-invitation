@@ -17,8 +17,8 @@ const RsvpForm = () => {
     <Form {...form}>
       <form>
         <div className="flex min-h-screen w-full items-center justify-center p-8 text-center font-avenir">
-          <div className="w-full max-w-[360px] rounded-md bg-gradient-to-bl from-[#B89678] via-[#5B3E26]/[0.34] to-[#FFFFFF] p-[1.5px]">
-            <div className="w-full rounded-md bg-white p-6 text-[#2E4366]">
+          <div className="w-full max-w-[360px] bg-gradient-to-bl from-[#B89678] via-[#5B3E26]/[0.34] to-[#FFFFFF] p-[1.5px]">
+            <div className="w-full bg-white p-6 text-[#2E4366]">
               <div className="space-y-6">
                 <div className="space-y-2.5">
                   <div className="text-xs italic">
@@ -143,16 +143,22 @@ const RsvpForm = () => {
                     )}
                   />
                 </div>
-                <button
-                  type="submit"
-                  className="w-full rounded bg-[#2E4366] py-2 text-white transition hover:bg-[#1d2f4a]"
-                >
-                  SUBMIT
-                </button>
-                <div className="text-center text-[10px] text-[#2E4366]/70 italic">
-                  *Please ensure your username is valid and clickable. <br />
-                  Unfortunately, we can&apos;t change this after being
-                  submitted.
+                <div className="flex justify-center">
+                  <div className="rounded-full bg-gradient-to-br from-[#2E4366]/60 to-[#2e4366]/34 p-[2px]">
+                    <button className="block rounded-full bg-white px-8 py-2 text-center font-kaisei text-base text-[#2E4366] uppercase transition">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+                <div className="items-start justify-start space-y-5 text-left text-xs text-[#2E4366] italic">
+                  <div className="text-[#2E4366]/70">
+                    *Please ensure your data is correct as it will be used for
+                    the making of our souvenir.
+                  </div>
+                  <div>
+                    Unfortunately, we can&apos;t change this after being
+                    submitted.
+                  </div>
                 </div>
               </div>
             </div>
