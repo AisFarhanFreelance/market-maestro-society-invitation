@@ -1,27 +1,11 @@
+import {
+  KaiseiTokumin,
+  amoresa,
+  avenir,
+  texGyreTermes,
+} from "@/lib/fonts/fonts";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Kaisei_Tokumin } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const KaiseiTokumin = Kaisei_Tokumin({
-  variable: "--font-kaisei-tokumin",
-  weight: ["400", "500", "700", "800"],
-  subsets: ["latin"],
-  display: "swap",
-  style: "normal",
-  fallback: ["sans-serif"],
-  preload: true,
-  adjustFontFallback: true,
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${KaiseiTokumin.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${KaiseiTokumin.variable} ${avenir.variable} ${amoresa.variable} ${texGyreTermes.variable} antialiased`}
       >
         {children}
       </body>
