@@ -5,7 +5,7 @@ import SyailendraLogo from "/public/assets/images/syailendra-logo.svg";
 const EventInvitation = () => {
   return (
     <div
-      className="flex min-h-screen flex-col items-center justify-between bg-contain bg-center bg-no-repeat px-16 py-36 text-white"
+      className="flex min-h-screen flex-col items-center justify-between bg-[#2E4366] bg-contain bg-center bg-no-repeat px-16 py-36 text-white"
       style={{ backgroundImage: 'url("/assets/images/diamond-border.svg")' }}
     >
       <Image
