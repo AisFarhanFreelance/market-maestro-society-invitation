@@ -1,40 +1,44 @@
 import Image from "next/image";
 
-import flowerImage from "/public/assets/flower.svg";
+import Trumpet from "/public/assets/images/trumpet.svg";
 
 const Reservation = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-invitation-night text-white">
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="m-8 w-full max-w-md justify-center space-y-6 border border-[#CCA482] bg-invitation-night p-8 text-center">
-          <h2 className="text-2xl font-extrabold">Join the Society</h2>
-          <div>
-            <span>
-              Limited seats await those ready to compose their next chapter.
-              Your participation adds to the symphony of success.
-            </span>
-          </div>
+    <div
+      className="relative flex min-h-screen items-center justify-center px-4 text-white"
+      style={{
+        backgroundColor: "#2E4366",
+        backgroundImage:
+          "linear-gradient(to right, #586984, #586984 7.5px, #2E4366 7.5px, #2E4366)",
+        backgroundSize: "15px 100%",
+      }}
+    >
+      <div className="pointer-events-none absolute top-0 left-0 h-72 w-full bg-gradient-to-b from-[#2E4366] to-transparent" />
+      <Image
+        src={Trumpet}
+        alt="Trumpet"
+        fill
+        className="absolute inset-0 z-0"
+        priority
+      />
 
-          <button className="relative w-full overflow-hidden rounded-full border-[1.15px] border-white/34 bg-invitation-night py-3.5 text-base font-normal uppercase">
-            <Image
-              src="/assets/button-background.svg"
-              alt=""
-              fill
-              className="pointer-events-none absolute inset-0 z-0 object-cover"
-            />
-            <span className="relative z-10">Reserve Your Position</span>
-          </button>
+      <div className="absolute inset-0 bottom-[25%] z-10 mx-9 my-4 flex flex-col items-center justify-center text-center">
+        <div className="m-8 flex flex-col">
+          <div className="flex flex-col space-y-3">
+            <div className="font-amoresa text-[32px]">Join the Society</div>
+            <div className="flex flex-col space-y-8 font-avenir text-sm">
+              <div>
+                Limited seats await those ready to compose their next chapter.
+              </div>
+              <div>Your participation adds to the symphony of success.</div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="absolute right-0 bottom-[-140px] left-[-80px] z-0 h-[427.39px] w-[564.28px]">
-        <Image
-          src={flowerImage}
-          alt="Floral decoration"
-          fill
-          className="object-cover object-bottom"
-          priority
-        />
+      <div className="absolute bottom-[35%] z-10 flex w-full items-center justify-center">
+        <button className="rounded-full bg-white px-7 py-3.5 leading-[94%] text-[#2E4366] uppercase">
+          Reserve Your Position
+        </button>
       </div>
     </div>
   );
