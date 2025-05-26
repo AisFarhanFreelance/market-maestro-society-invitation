@@ -7,10 +7,15 @@ import ladiesDress2 from "/public/assets/images/ladies-dress2.svg";
 
 const Attendance = () => {
   return (
-    <div className="min-h-screen bg-[#2E4366]">
+    <div
+      className="mx-1 min-h-screen bg-[#2E4366] bg-contain bg-center bg-no-repeat px-6 py-28"
+      style={{
+        backgroundImage: 'url("/assets/images/attendance-border.svg")',
+      }}
+    >
       <div className="flex items-center justify-center text-center">
         <div className="m-8 inline-block from-[#CCA482] to-[#665241] p-[1px]">
-          <div className="border-2 border-solid border-white p-4 text-white">
+          <div className="text-white">
             <AnimatedElement>
               <div className="mb-8 font-tex-gyre-termes text-3xl">
                 Attendance
