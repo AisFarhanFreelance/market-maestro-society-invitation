@@ -41,7 +41,7 @@ const MusicPlayer = () => {
         loop
       />
       <div
-        className="fixed right-2 bottom-50 z-50 cursor-pointer"
+        className="fixed bottom-20 z-50 ml-8 cursor-pointer"
         onClick={togglePlay}
       >
         <div className="relative flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-[#2E4366] bg-white text-[#2E4366]">
