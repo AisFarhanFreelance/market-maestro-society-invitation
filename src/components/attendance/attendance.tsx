@@ -10,7 +10,7 @@ const Attendance = () => {
     <div
       className="mx-1 min-h-screen bg-[#2E4366] bg-contain bg-center bg-no-repeat px-6 py-28"
       style={{
-        backgroundImage: 'url("/assets/images/attendance-border.svg")',
+        backgroundImage: 'url("/assets/images/attendance-border-2.svg")',
       }}
     >
       <div className="flex items-center justify-center text-center">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Trumpet from "/public/assets/images/trumpet.svg";
 
@@ -36,9 +37,11 @@ const Reservation = () => {
         </div>
       </div>
       <div className="absolute bottom-[35%] z-10 flex w-full items-center justify-center">
-        <button className="rounded-full bg-white px-7 py-3.5 leading-[94%] text-[#2E4366] uppercase">
-          Reserve Your Position
-        </button>
+        <Link href="/rsvp">
+          <button className="rounded-full bg-white px-7 py-3.5 leading-[94%] text-[#2E4366] uppercase">
+            Reserve Your Position
+          </button>
+        </Link>
       </div>
     </div>
   );
