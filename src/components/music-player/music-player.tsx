@@ -1,6 +1,6 @@
 "use client";
 
-import { CirclePause, Disc3 } from "lucide-react";
+import { CirclePause, Music2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const MusicPlayer = () => {
@@ -46,7 +46,7 @@ const MusicPlayer = () => {
       >
         <div className="relative flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-[#2E4366] bg-white text-[#2E4366]">
           {isPlaying ? (
-            <Disc3
+            <Music2
               className="animate-spin"
               style={{ animationDuration: "6s" }}
             />
