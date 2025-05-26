@@ -11,7 +11,13 @@ export const RsvpFormSchema = z.object({
       required_error: "Nickname is required",
     })
     .regex(/^[A-Za-z' ]+$/, "Special characters are not allowed"),
-  shortDescription: z
+  occupation: z
+    .string({
+      required_error: "Occupation is required",
+    })
+    .regex(/^[A-Za-z0-9',.\s]+$/, "Special characters are not allowed")
+    .min(1, "Occupation is required"),
+  description: z
     .string({
       required_error: "Short description is required",
     })
@@ -23,7 +29,7 @@ export const RsvpFormSchema = z.object({
       required_error: "Email is required",
     })
     .email("Invalid email adress"),
-  linkedIn: z
+  linkedinLink: z
     .string({
       required_error: "LinkedIn profile is required",
     })
@@ -36,12 +42,12 @@ export const RsvpFormSchema = z.object({
       /^\+?[0-9\s-]+$/,
       "Phone number must be a valid format (e.g., +1234567890 or 123-456-7890)",
     ),
-  tiktok: z
+  tiktokUser: z
     .string({
       required_error: "TikTok username is required",
     })
     .regex(/^[A-Za-z0-9_.]{2,24}$/, "Invalid TikTok username"),
-  instagram: z
+  instagramUser: z
     .string({
       required_error: "Instagram username is required",
     })
