@@ -21,7 +21,7 @@ import { Textarea } from "../ui/textarea";
 import Popup from "./pop-up";
 
 const RsvpForm = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
 
   const form = useForm<RsvpFormValues>({
