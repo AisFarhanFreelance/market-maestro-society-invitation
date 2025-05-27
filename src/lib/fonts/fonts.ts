@@ -1,4 +1,4 @@
-import { Kaisei_Tokumin } from "next/font/google";
+import { Kaisei_Tokumin, Unbounded } from "next/font/google";
 import localFont from "next/font/local";
 
 const amoresa = localFont({
@@ -67,6 +67,17 @@ const texGyreTermes = localFont({
   fallback: ["serif"],
 });
 
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+  style: "normal",
+  fallback: ["sans-serif"],
+  preload: true,
+  adjustFontFallback: true,
+});
+
 const KaiseiTokumin = Kaisei_Tokumin({
   variable: "--font-kaisei-tokumin",
   weight: ["400", "500", "700", "800"],
@@ -78,4 +89,4 @@ const KaiseiTokumin = Kaisei_Tokumin({
   adjustFontFallback: true,
 });
 
-export { amoresa, avenir, carrig, texGyreTermes, KaiseiTokumin };
+export { amoresa, avenir, carrig, texGyreTermes, unbounded, KaiseiTokumin };
