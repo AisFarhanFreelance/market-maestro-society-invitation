@@ -16,8 +16,8 @@ export default function Page() {
           <Attendance />
           <Rundown />
           <Reservation />
+          <MusicPlayer />
         </div>
-        <MusicPlayer />
       </div>
     </FadeInWrapper>
   );

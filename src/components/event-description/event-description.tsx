@@ -1,45 +1,34 @@
-import AnimatedElement from "../animation/animated-element";
+import Image from "next/image";
+
+import CAKLogo from "/public/assets/images/cak-investmen-club-logo-white1.svg";
+import SyailendraLogo3 from "/public/assets/images/syailendra-logo3.svg";
+import WaveLine2 from "/public/assets/images/wave-line2.svg";
 
 const EventDescription = () => {
   return (
-    <div
-      className="relative min-h-screen bg-invitation-night text-white"
-      style={{
-        backgroundColor: "#2E4366",
-        backgroundImage:
-          "linear-gradient(to right, #586984, #586984 7.5px, #2E4366 7.5px, #2E4366)",
-        backgroundSize: "15px 100%",
-      }}
-    >
-      <div className="absolute inset-0 m-8 flex items-center justify-center text-center">
-        <div className="inline-block h-full bg-gradient-to-bl from-[#B89678] via-[#5B3E26]/[0.34] to-[#FFFFFF] p-[1px]">
-          <div className="flex h-full flex-col justify-center space-y-2 bg-white p-8 align-middle text-[#2E4366]">
-            <AnimatedElement>
-              <div className="font-amoresa text-2xl">A Night of</div>
-              <div className="font-tex-gyre-termes text-xl tracking-[0.5em]  uppercase">
-                Strategic
-              </div>
-              <div className="font-tex-gyre-termes text-base ">Networking</div>
-            </AnimatedElement>
-            <div className="text-avenir flex flex-col space-y-8 text-sm">
-              <AnimatedElement>
-                Market Maestros come together for an evening where financial
-                knowledge meets smart conversations. Where every discussion
-                flows like music, and connections shape the future of smart
-                investing.
-              </AnimatedElement>
-              <AnimatedElement>
-                <div className="flex flex-col space-y-1">
-                  <span className="font-bold">Transform Your Networking</span>
-                  <span>
-                    into a stage for breakthrough opportunities, where ambition
-                    meets strategy in perfect harmony.
-                  </span>
-                </div>
-              </AnimatedElement>
-            </div>
+    <div className="relative flex min-h-screen flex-col items-center justify-center">
+      <div className="mx-14 flex min-h-screen flex-col items-center justify-center text-center font-avenir text-sm text-white">
+        <div className="flex flex-col items-center justify-center">
+          <Image
+            src={SyailendraLogo3}
+            alt="Syailendra Preferred Investment Partner"
+          />
+          <div className="font-light">In Collaboration With</div>
+          <Image src={CAKLogo} alt="CAK Investment Club" />
+        </div>
+        <div className="mx-2.5 space-y-3">
+          <div>Welcomes you to intimate night.</div>
+          <div>
+            Setting filled with insightful conversation, jazz-laced atmosphere
+          </div>
+          <div className="px-[12.5px]">
+            A tribute to the thinkers, the builders,{" "}
+            <b>the future market maestros</b>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-[-82px] opacity-70">
+        <Image src={WaveLine2} alt="Wave Line" />
       </div>
     </div>
   );

@@ -1,72 +1,64 @@
 import Link from "next/link";
 
 import AnimatedElement from "../animation/animated-element";
+import { Button } from "../ui/button";
 
 const DateTime = () => {
   return (
-    <div
-      className="relative flex min-h-screen items-center justify-center bg-invitation-night px-4 text-white"
-      style={{
-        backgroundColor: "#2E4366",
-        backgroundImage:
-          "linear-gradient(to right, #586984, #586984 7.5px, #2E4366 7.5px, #2E4366)",
-        backgroundSize: "15px 100%",
-      }}
-    >
-      <div
-        className="relative flex aspect-[3/5] w-full max-w-md items-center justify-center bg-cover bg-center bg-no-repeat p-10 text-black"
-        style={{
-          backgroundImage: 'url("/assets/images/venue-element.svg")',
-          backgroundSize: "100% auto",
-          backgroundPosition: "center center",
-        }}
-      >
-        <div className="flex w-full flex-col items-center justify-center space-y-6 text-center">
-          <AnimatedElement>
-            <h2 className="text-2xl font-extrabold capitalize">
-              Event Particulars
-            </h2>
-          </AnimatedElement>
-          <AnimatedElement>
-            <div className="space-y-2 text-sm">
-              <div className="font-extrabold">Date & Time</div>
-              <div>
-                <p>
-                  Saturday, June 14<sup>th</sup>, 2025
-                </p>
-                <p>17:30 - 21:00 WIB</p>
-              </div>
+    <div className="relative flex min-h-screen items-center justify-center px-12 text-white">
+      <div className="flex w-full flex-col items-center justify-center text-center">
+        <AnimatedElement>
+          <h2 className="mb-3 font-carrig text-xl">DATE & TIME</h2>
+        </AnimatedElement>
+        <AnimatedElement>
+          <div className="mb-3 text-sm">
+            <div>
+              <p>
+                Saturday, June 14<sup>th</sup>, 2025
+              </p>
+              <p>17:30 - 21:00 WIB</p>
             </div>
-          </AnimatedElement>
-          <AnimatedElement>
-            <div className="space-y-2 text-sm capitalize">
-              <div className="font-extrabold">Venue</div>
-              <div className="font-extrabold opacity-80">
-                Ashley Wahid Hasyim
-              </div>
-              <div className="text-sm leading-relaxed">
-                Jl. K.H. Wahid Hasyim No.73-75, RT.1/RW.4, Gondangdia, Kec.
-                Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10350
-              </div>
+          </div>
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE
+            &dates=20250614T103000Z%2F20250614T140000Z
+            &details=Final%20Reminders%3A%0A%0A%F0%9F%93%8D%20Ashley%20Wahid%20Hasyim%20%0AJl.%20K.H.%20Wahid%20Hasyim%20No.73-75%2C%20Menteng%2C%20Jakarta%20Pusat%0A%0A%F0%9F%95%90%20Gates%20Open%3A%205%3A30%20PM%20WIB%20%0AArrive%20fashionably%20on%20time%2C%20the%20symphony%20begins%20promptly.%0A%0A%F0%9F%91%94%20Dress%20Code%3A%20All%20White%20Attire%2C%20%0ALadies%3A%20White%20cocktail%20dress%20Gentlemen%3A%20White%2Fcream%20formal%20blazer%0A%0ANote%3A%20If%20white%20trousers%20are%20not%20available%20for%20men%2C%20khaki%20or%20beige%20alternatives%20are%20acceptable.%20%0A%0AReady%20to%20compose%20your%20next%20chapter%3F%20%0ASee%20you%20there%2C%20Maestro.%0A%0ABest%20Regards%2C%20%0ASyailendra%20Capital&location=Ashley%20Wahid%20Hasyim&text=Syailendra%20Networking%20Night%20%3A%20The%20Market%20Maestros%20Night"
+          >
+            <Button className="mb-8 rounded-full bg-white px-3.5 py-3 font-semibold text-[#F05625] italic">
+              ADD TO CALENDAR
+            </Button>
+          </Link>
+        </AnimatedElement>
+        <AnimatedElement>
+          <div className="">
+            <h2 className="mb-3 font-carrig text-xl">Location</h2>
+            <div className="mb-3 font-avenir text-sm font-bold">
+              Hotel Ashley Wahid Hasyim
             </div>
-          </AnimatedElement>
-          <AnimatedElement>
-            <div className="flex justify-center">
-              <div className="rounded-full bg-gradient-to-br from-[#2E4366]/60 to-[#2e4366]/34 p-[2px]">
-                <Link
-                  href="https://maps.app.goo.gl/mVSDRzJDHfd1vCmQA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block rounded-full bg-white px-8 py-2 text-center font-kaisei text-base text-[#2E4366] uppercase transition"
-                >
-                  View Location
-                </Link>
-              </div>
+            <div className="mb-3 font-avenir text-sm">
+              Jl. K.H. Wahid Hasyim No.73-75, RT.1/RW.4, Gondangdia, Kec.
+              Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10350
             </div>
-          </AnimatedElement>
-        </div>
+          </div>
+        </AnimatedElement>
+        <AnimatedElement>
+          <div className="flex justify-center">
+            <div className="">
+              <Link
+                href="https://maps.app.goo.gl/3pULyHMA329inCPb9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="mb-8 rounded-full bg-white px-3.5 py-3 font-semibold text-[#F05625] italic">
+                  OPEN LOCATION
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </AnimatedElement>
       </div>
-      <div className="pointer-events-none absolute bottom-0 left-0 h-72 w-full bg-gradient-to-t from-[#2E4366] to-transparent" />
     </div>
   );
 };

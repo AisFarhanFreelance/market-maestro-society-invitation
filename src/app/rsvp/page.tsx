@@ -1,18 +1,19 @@
+import FadeInWrapper from "@/components/animation/fade-in";
+import MusicPlayer from "@/components/music-player/music-player";
 import RsvpForm from "@/components/rsvp-form/rsvp-form";
 
 const RSVP = () => {
   return (
-    <div
-      className="relative min-h-screen bg-invitation-night text-[#2E4366]"
-      style={{
-        backgroundColor: "#2E4366",
-        backgroundImage:
-          "linear-gradient(to right, #586984, #586984 7.5px, #2E4366 7.5px, #2E4366)",
-        backgroundSize: "15px 100%",
-      }}
-    >
-      <RsvpForm />
-    </div>
+    <FadeInWrapper>
+      <div className="flex min-h-screen items-center justify-center bg-white">
+        <div className="relative h-full w-full max-w-sm overflow-hidden bg-[#0D254D]">
+          <div className="absolute top-[-184px] left-[-217px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
+          <div className="absolute top-[673px] right-[-184px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
+          <RsvpForm />
+          <MusicPlayer />
+        </div>
+      </div>
+    </FadeInWrapper>
   );
 };
 

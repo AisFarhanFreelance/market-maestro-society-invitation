@@ -1,6 +1,6 @@
 "use client";
 
-import { CirclePause, Music2 } from "lucide-react";
+import { CirclePause, Music } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const MusicPlayer = () => {
@@ -41,15 +41,17 @@ const MusicPlayer = () => {
         loop
       />
       <div
-        className="fixed right-2 bottom-50 z-50 cursor-pointer"
+        className="fixed bottom-20 z-50 ml-8 cursor-pointer"
         onClick={togglePlay}
       >
-        <div className="relative flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-[#2E4366] bg-white text-[#2E4366]">
+        <div className="relative flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-[#F05625] bg-white text-[#F05625]">
           {isPlaying ? (
-            <Music2
-              className="animate-spin"
+            <div
+              className="animate-spin rounded-sm border border-solid border-[#F05625] p-0.5 text-[#F05625]"
               style={{ animationDuration: "6s" }}
-            />
+            >
+              <Music size={12} />
+            </div>
           ) : (
             <CirclePause />
           )}

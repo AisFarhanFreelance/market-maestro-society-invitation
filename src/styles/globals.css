@@ -12,6 +12,9 @@
   --font-amoresa: "Amoresa", sans-serif;
   --font-avenir: "Avenir Next", sans-serif;
   --font-tex-gyre-termes: "TeX Gyre Termes", serif;
+  --font-carrig: "Carrig W01", serif;
+  --font-unbounded: "Unbounded", cursive;
+  --font-copperplate: "Copperplate", serif;
   /** Font Families  */
 
   --color-background: var(--background);
