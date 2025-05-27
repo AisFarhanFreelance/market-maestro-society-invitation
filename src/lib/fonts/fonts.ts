@@ -47,7 +47,6 @@ const carrig = localFont({
   preload: true,
   fallback: ["sans-serif"],
 });
-
 const texGyreTermes = localFont({
   src: [
     {

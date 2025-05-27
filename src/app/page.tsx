@@ -1,4 +1,5 @@
-import Image from "next/image";
+import FadeInWrapper from "@/components/animation/fade-in";
+import EventInvitation from "@/components/event-invitation/event-invitation";
 
 import FadeInWrapper from "@/components/animation/fade-in";
 import Attendance from "@/components/attendance/attendance";
