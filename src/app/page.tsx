@@ -10,6 +10,7 @@ import Reservation from "@/components/rsvp/reservation";
 
 import BgDot1 from "/public/assets/images/bg-dot1.svg";
 import BgDot2 from "/public/assets/images/bg-dot2.svg";
+import BgDotLowOpacity1 from "/public/assets/images/bg-dot-low-opacity1.svg";
 import BiolaOrnament from "/public/assets/images/biola-ornament.svg";
 import StringOrnament2 from "/public/assets/images/string-ornament2.svg";
 import StringOrnament from "/public/assets/images/string-ornament.svg";
@@ -32,6 +33,12 @@ export default function Home() {
           </div>
           <div className="absolute top-[880px] bottom-0 left-[-54px]">
             <Image src={StringOrnament2} alt="String Ornament 2" />
+          </div>
+          <div className="absolute top-[820px] right-[-54px]">
+            <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
+          </div>
+          <div className="absolute top-[900px] left-0">
+            <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
           </div>
           <div className="absolute top-[2685px] left-[313px]">
             <Image src={BgDot1} alt="Background Dot 1" />
