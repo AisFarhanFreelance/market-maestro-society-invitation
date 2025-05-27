@@ -67,6 +67,25 @@ const texGyreTermes = localFont({
   fallback: ["serif"],
 });
 
+const Copperplate = localFont({
+  src: [
+    {
+      path: "../../../public/assets/fonts/copperplate/OPTICopperplate-Light.otf",
+      weight: "300",
+      style: "light",
+    },
+    {
+      path: "../../../public/assets/fonts/copperplate/Copperplate.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-copperplate",
+  display: "swap",
+  preload: true,
+  fallback: ["sans-serif"],
+});
+
 const unbounded = Unbounded({
   variable: "--font-unbounded",
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -89,4 +108,12 @@ const KaiseiTokumin = Kaisei_Tokumin({
   adjustFontFallback: true,
 });
 
-export { amoresa, avenir, carrig, texGyreTermes, unbounded, KaiseiTokumin };
+export {
+  amoresa,
+  avenir,
+  carrig,
+  texGyreTermes,
+  unbounded,
+  KaiseiTokumin,
+  Copperplate,
+};

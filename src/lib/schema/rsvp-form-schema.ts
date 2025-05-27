@@ -37,8 +37,8 @@ export const RsvpFormSchema = z.object({
       required_error: "Phone number is required",
     })
     .regex(
-      /^\+?[0-9\s-]+$/,
-      "Phone number must be a valid format (e.g., +1234567890 or 123-456-7890)",
+      /^[0-9,-]+$/,
+      "Phone number must only contain digits, commas, or hyphens",
     ),
   tiktokUser: z
     .string({

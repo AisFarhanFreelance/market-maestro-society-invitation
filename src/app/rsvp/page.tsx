@@ -6,7 +6,7 @@ const RSVP = () => {
   return (
     <FadeInWrapper>
       <div className="flex min-h-screen items-center justify-center bg-white">
-        <div className="h-full w-full max-w-sm bg-[#2E4366]">
+        <div className="h-full w-full max-w-sm bg-[#0D254D]">
           <RsvpForm />
           <MusicPlayer />
         </div>
