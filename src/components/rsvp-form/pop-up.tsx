@@ -1,5 +1,7 @@
 import { Whatsapp } from "iconsax-reactjs";
 import Lottie from "lottie-react";
+import { X } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "../ui/button";
 import checkboxAnimation from "./checkbox-lottie.json";
@@ -18,6 +20,14 @@ export default function Popup({ isOpen, onClose }: PopupProps) {
             className="popup-content w-full max-w-sm p-8 text-center"
             onClick={(e) => e.stopPropagation()}
           >
+            <div className="flex justify-end">
+              <button
+                className="rounded-xs bg-[#F05625] p-0.5"
+                onClick={onClose}
+              >
+                <X color="white" size="12" />
+              </button>
+            </div>
             <Lottie
               animationData={checkboxAnimation}
               loop={false}
@@ -46,9 +56,15 @@ export default function Popup({ isOpen, onClose }: PopupProps) {
             <div className="mb-3 font-avenir text-xs text-[#2E4366]">
               For any questions, reach out to:
             </div>
-            <Button className="mb-12 rounded-full bg-[#F05625] px-7 py-3.5 text-base leading-[94%] text-white uppercase">
-              Elle <Whatsapp size="32" color="#FFFFFF" />
-            </Button>
+            <Link
+              href="https://api.whatsapp.com/send?phone=6281310072368"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="mb-3 rounded-full bg-[#F05625] px-7 py-3.5 text-base leading-[94%] text-white uppercase">
+                Elle <Whatsapp size="32" color="#FFFFFF" />
+              </Button>
+            </Link>
             <hr className="mb-3 border-solid border-[#2E4366]" />
             <div className="font-avenir text-xs text-[#2E4366]">
               <b>Syailendra Capital</b> x CAK Investment Club
