@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
+import AnimatedElement from "../animation/animated-element";
 import {
   Form,
   FormControl,
@@ -21,14 +22,28 @@ import Popup from "./pop-up";
 
 const RsvpForm = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPressed, setIsPressed] = useState(false);
 
   const form = useForm<RsvpFormValues>({
     resolver: zodResolver(RsvpFormSchema),
     mode: "onChange",
+    defaultValues: {
+      fullName: "",
+      nickName: "",
+      occupation: "",
+      description: "",
+      email: "",
+      linkedinLink: "",
+      phoneNumber: "",
+      tiktokUser: "",
+      instagramUser: "",
+    },
   });
 
   const onSubmit = async (data: RsvpFormValues) => {
     setIsOpen(true);
+    setIsPressed(true);
+    setTimeout(() => setIsPressed(false), 600);
 
     await insertBusinessCard({
       fullName: data.fullName,
@@ -41,6 +56,8 @@ const RsvpForm = () => {
       instagramUser: data.instagramUser,
       phoneNumber: data.phoneNumber,
     });
+
+    form.reset();
   };
 
   return (
@@ -51,31 +68,37 @@ const RsvpForm = () => {
             <div className="w-full p-6 text-[#2E4366]">
               <div className="space-y-6">
                 <div className="space-y-2.5">
-                  <div className="font-carrig text-4xl tracking-[0.5rem] text-[#E5A155]">
-                    RSVP
-                  </div>
-                  <div className="font-copperplate text-xs tracking-wider text-white uppercase">
-                    Join us for a night of market wisdom, where conversations go
-                    beyond charts & numbers
-                  </div>
-                  <div className="mb-8 font-copperplate text-xs tracking-wider text-white uppercase underline">
-                    Where every guest is a maestro in the making.
-                  </div>
-                  <div className="border-l border-solid border-white pl-2 text-start font-avenir text-sm text-white">
-                    <div className="mb-3">
-                      Upon confirmation, kindly provide accurate personal
-                      details.
+                  <AnimatedElement>
+                    <div className="font-carrig text-4xl tracking-[0.5rem] text-[#E5A155]">
+                      RSVP
                     </div>
-                    <div>
-                      <b>
-                        This information will be used to support your
-                        personalized experience during the event.
-                      </b>
-                      <br />
-                      *Please note that submitted details are final & cannot be
-                      modified.
+                  </AnimatedElement>
+                  <AnimatedElement>
+                    <div className="font-copperplate text-xs tracking-wider text-white uppercase">
+                      Join us for a night of market wisdom, where conversations
+                      go beyond charts & numbers
                     </div>
-                  </div>
+                    <div className="mb-8 font-copperplate text-xs tracking-wider text-white uppercase underline">
+                      Where every guest is a maestro in the making.
+                    </div>
+                  </AnimatedElement>
+                  <AnimatedElement>
+                    <div className="border-l border-solid border-white pl-2 text-start font-avenir text-sm text-white">
+                      <div className="mb-3">
+                        Upon confirmation, kindly provide accurate personal
+                        details.
+                      </div>
+                      <div>
+                        <b>
+                          This information will be used to support your
+                          personalized experience during the event.
+                        </b>
+                        <br />
+                        *Please note that submitted details are final & cannot
+                        be modified.
+                      </div>
+                    </div>
+                  </AnimatedElement>
                 </div>
                 <div className="space-y-3">
                   <FormField
@@ -279,7 +302,11 @@ const RsvpForm = () => {
                 <div className="flex justify-center">
                   <div className="rounded-full bg-gradient-to-br from-[#2E4366]/60 to-[#2e4366]/34 p-[2px]">
                     <button
-                      className="block rounded-full bg-[#F05625] px-7 py-3.5 font-avenir text-base text-white uppercase transition"
+                      className={`rounded-full bg-[#F05625] px-7 py-3.5 leading-[94%] text-white uppercase transition-transform duration-150 ${
+                        isPressed
+                          ? "scale-95 animate-pulse shadow-lg"
+                          : "hover:scale-105 hover:bg-[#E04A1F] hover:shadow-xl"
+                      }`}
                       type="submit"
                     >
                       Submit
