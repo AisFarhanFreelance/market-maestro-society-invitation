@@ -1,20 +1,59 @@
+import { Whatsapp } from "iconsax-reactjs";
+import Lottie from "lottie-react";
+
+import { Button } from "../ui/button";
+import checkboxAnimation from "./checkbox-lottie.json";
+
 interface PopupProps {
-  title: string;
   isOpen: boolean;
   onClose: () => void;
 }
 
-export default function Popup({ title, isOpen, onClose }: PopupProps) {
+export default function Popup({ isOpen, onClose }: PopupProps) {
   return (
     <>
       {isOpen && (
         <div className="popup-backdrop" onClick={onClose}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <div className="popup-header">
-              <h2>{title}</h2>
-              <button className="popup-close" onClick={onClose}>
-                ×
-              </button>
+          <div
+            className="popup-content w-full max-w-sm p-8 text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Lottie
+              animationData={checkboxAnimation}
+              loop={false}
+              className="h-32 w-full"
+            />
+            <div className="font-tex-gyre-termes text-2xl text-[#2E4366]">
+              Your Position is
+            </div>
+            <div className="mb-8 font-carrig text-5xl text-[#F05625]">
+              RESERVED
+            </div>
+            <div className="mb-1 font-avenir text-sm text-[#2E4366]">
+              Thank you for joining the symphony. Your confirmation details will
+              be sent via Whatsapp/Emaill within 24 hours before the event.
+            </div>
+            <div className="mb-12 font-avenir text-sm text-[#2E4366]">
+              Your personalized business card will be prepared based on the
+              information provided.
+            </div>
+            <hr className="mb-3 border-solid border-[#2E4366]" />
+            <div className="mb-8 font-carrig text-xs text-[#2E4366]">
+              Syailendra Capital x CAK Investment Club
+              <br />
+              June 14th, 2025 | 17.30 - 21.00
+            </div>
+            <div className="mb-3 font-avenir text-xs text-[#2E4366]">
+              For any questions, reach out to:
+            </div>
+            <Button className="mb-12 rounded-full bg-[#F05625] px-7 py-3.5 text-base leading-[94%] text-white uppercase">
+              Elle <Whatsapp size="32" color="#FFFFFF" />
+            </Button>
+            <hr className="mb-3 border-solid border-[#2E4366]" />
+            <div className="font-avenir text-xs text-[#2E4366]">
+              <b>Syailendra Capital</b> x CAK Investment Club
+              <br />
+              June 14th, 2025 | 17.30 - 21.00
             </div>
           </div>
         </div>
@@ -53,18 +92,7 @@ export default function Popup({ title, isOpen, onClose }: PopupProps) {
           background: white;
           border-radius: 8px;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          max-width: 500px;
-          width: 90%;
-          max-height: 80vh;
           overflow-y: auto;
-        }
-
-        .popup-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 20px;
-          border-bottom: 1px solid #e5e5e5;
         }
 
         .popup-header h2 {

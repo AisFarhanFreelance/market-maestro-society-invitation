@@ -173,7 +173,7 @@ const RsvpForm = () => {
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Ex : +62 812-1228-1287"
+                            placeholder="Ex : 62 812-1228-1287"
                             {...field}
                           />
                         </FormControl>
@@ -245,11 +245,7 @@ const RsvpForm = () => {
           </div>
         </div>
       </form>
-      <Popup
-        title="RSVP Confirmation"
-        isOpen={isOpen}
-        onClose={() => setIsOpen(false)}
-      />
+      <Popup isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </Form>
   );
 };
