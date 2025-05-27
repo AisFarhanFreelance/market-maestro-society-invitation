@@ -33,7 +33,7 @@ const DateTime = () => {
         </AnimatedElement>
         <AnimatedElement>
           <div className="">
-            <h2 className="mb-3 font-carrig text-xl">Location</h2>
+            <h2 className="mb-3 font-carrig text-xl">LOCATION</h2>
             <div className="mb-3 font-avenir text-sm font-bold">
               Hotel Ashley Wahid Hasyim
             </div>
