@@ -21,7 +21,6 @@ export const RsvpFormSchema = z.object({
     .string({
       required_error: "Short description is required",
     })
-    .regex(/^[A-Za-z0-9',.\s]+$/, "Special characters are not allowed")
     .min(1, "Short description is required")
     .max(1000, "Short description is too long"),
   email: z

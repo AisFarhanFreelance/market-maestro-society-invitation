@@ -21,7 +21,7 @@ import { Textarea } from "../ui/textarea";
 import Popup from "./pop-up";
 
 const RsvpForm = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isPressed, setIsPressed] = useState(false);
 
   const form = useForm<RsvpFormValues>({
@@ -118,7 +118,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />
@@ -139,7 +139,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />
@@ -160,7 +160,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />
@@ -187,7 +187,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />
@@ -206,7 +206,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />
@@ -227,7 +227,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />
@@ -248,8 +248,8 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
-                        <FormDescription className="text-start text-xs text-white">
+                        <FormMessage className="text-start" />
+                        <FormDescription className="text-start text-xs text-white italic opacity-50">
                           Input the number directly without using a
                           &quot;+&quot; sign at the beginning.
                         </FormDescription>
@@ -273,7 +273,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />
@@ -294,7 +294,7 @@ const RsvpForm = () => {
                             {...field}
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-start" />
                       </FormItem>
                     )}
                   />

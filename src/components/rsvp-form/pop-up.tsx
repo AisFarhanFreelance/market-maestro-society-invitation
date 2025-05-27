@@ -17,7 +17,7 @@ export default function Popup({ isOpen, onClose }: PopupProps) {
       {isOpen && (
         <div className="popup-backdrop" onClick={onClose}>
           <div
-            className="popup-content w-full max-w-sm p-8 text-center"
+            className="popup-content w-[calc(384px-32px)] p-8 text-center"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-end">
@@ -30,7 +30,7 @@ export default function Popup({ isOpen, onClose }: PopupProps) {
             </div>
             <Lottie
               animationData={checkboxAnimation}
-              loop={false}
+              loop={true}
               className="h-32 w-full"
             />
             <div className="font-tex-gyre-termes text-2xl text-[#2E4366]">
