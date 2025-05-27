@@ -34,6 +34,20 @@ const avenir = localFont({
   fallback: ["sans-serif"],
 });
 
+const carrig = localFont({
+  src: [
+    {
+      path: "../../../public/assets/fonts/carrig-w01/Carrig-W01-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-carrig",
+  display: "swap",
+  preload: true,
+  fallback: ["sans-serif"],
+});
+
 const texGyreTermes = localFont({
   src: [
     {
@@ -64,4 +78,4 @@ const KaiseiTokumin = Kaisei_Tokumin({
   adjustFontFallback: true,
 });
 
-export { amoresa, avenir, texGyreTermes, KaiseiTokumin };
+export { amoresa, avenir, carrig, texGyreTermes, KaiseiTokumin };

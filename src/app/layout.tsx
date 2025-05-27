@@ -2,6 +2,7 @@ import {
   KaiseiTokumin,
   amoresa,
   avenir,
+  carrig,
   texGyreTermes,
 } from "@/lib/fonts/fonts";
 import "@/styles/globals.css";
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${KaiseiTokumin.variable} ${avenir.variable} ${amoresa.variable} ${texGyreTermes.variable} antialiased`}
+        className={`${KaiseiTokumin.variable} ${avenir.variable} ${amoresa.variable} ${texGyreTermes.variable} ${carrig.variable} antialiased`}
       >
         {children}
       </body>
