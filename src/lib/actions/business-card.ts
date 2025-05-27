@@ -1,6 +1,6 @@
 "use server";
 
-import { createClient } from "../utility/supabase/server";
+import { google } from "googleapis";
 
 interface InsertBusinessCardParams {
   fullName: string;
@@ -25,23 +25,45 @@ export async function insertBusinessCard({
   instagramUser,
   phoneNumber,
 }: InsertBusinessCardParams) {
-  const supabase = await createClient();
+  const clientEmail = process.env.NEXT_CLIENT_EMAIL;
+  const privateKey = process.env.NEXT_PRIVATE_KEY?.replace(/\\n/g, "\n");
+  const spreadsheetId = process.env.NEXT_SPREADSHEET_ID;
 
-  const { data, error } = await supabase.from("business_cards").insert({
-    full_name: fullName,
-    nick_name: nickName,
-    occupation: occupation,
-    description: description,
-    email: email,
-    linkedin_link: linkedinLink,
-    tiktok_user: tiktokUser,
-    instagram_user: instagramUser,
-    phone_number: phoneNumber,
+  const googleAuth = await google.auth.getClient({
+    projectId: process.env.NEXT_PROJECT_ID,
+    credentials: {
+      type: "service_account",
+      client_email: clientEmail,
+      private_key: privateKey,
+    },
+    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
   });
 
-  if (error) {
-    throw new Error(error.message);
-  }
+  const sheets = google.sheets({ version: "v4", auth: googleAuth });
 
-  return data;
+  try {
+    await sheets.spreadsheets.values.append({
+      spreadsheetId: spreadsheetId,
+      range: "A2:I2",
+      valueInputOption: "USER_ENTERED",
+      requestBody: {
+        values: [
+          [
+            fullName,
+            nickName,
+            occupation,
+            description,
+            email,
+            linkedinLink,
+            tiktokUser,
+            instagramUser,
+            phoneNumber,
+          ],
+        ],
+      },
+    });
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.error("BUSINESSCARD_SERVERACTION", error);
+  }
 }
