@@ -7,7 +7,7 @@ import SyailendraLogo3 from "/public/assets/images/syailendra-logo3.svg";
 const EventDescription = () => {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center">
-      <div className="mx-14 flex min-h-[843px] flex-col items-center justify-center text-center font-avenir text-sm text-white">
+      <div className="mx-14 flex min-h-screen flex-col items-center justify-center text-center font-avenir text-sm text-white">
         <AnimatedElement needScroll={false}>
           <div className="flex flex-col items-center justify-center">
             <Image
