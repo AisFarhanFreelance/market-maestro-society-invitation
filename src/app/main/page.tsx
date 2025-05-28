@@ -19,15 +19,14 @@ export default function Home() {
   return (
     <FadeInWrapper>
       <div className="flex min-h-screen items-center justify-center  bg-white">
-        <div className="relative h-full w-full max-w-sm overflow-hidden bg-[#0D254D]">
+        <div className="relative h-full w-full max-w-md overflow-hidden bg-[#0D254D]">
           <div className="absolute top-[-184px] left-[-217px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
           <div className="absolute top-[673px] right-[-184px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
           <div className="absolute top-[1542px] left-[-217px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
           <div className="absolute top-[2399px] left-[-239px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
 
-          <div className="relative top-[844px]">
-            {/* Wrapper dengan posisi relatif */}
-            <div className="absolute left-[215px]">
+          <div className="relative top-[30px]">
+            <div className="absolute right-[-52.73px]">
               <Image src={StringOrnament} alt="String Ornament" />
             </div>
             <div className="absolute top-[90px] right-0">
@@ -38,23 +37,33 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="absolute top-[949px] left-[250px]">
+          <div className="absolute top-[200px] right-[0px]">
             <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
           </div>
-          <div className="absolute top-[1040px] right-[250px]">
+          <div className="absolute top-[290px] left-[0px]">
             <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
           </div>
-          <div className="absolute top-[2685px] left-[313px]">
-            <Image src={BgDot1} alt="Background Dot 1" />
+          <div className="absolute top-[2000px] right-[0px]">
+            <Image
+              src={BgDot1}
+              alt="Background Dot 1"
+              width={77.4}
+              height={159}
+            />
           </div>
-          <div className="absolute top-[2944px] left-[-22px]">
+          <div className="absolute top-[2200px] left-[-22px]">
             <Image src={BgDot2} alt="Background Dot 2" />
           </div>
-          <div className="z-index-100 absolute top-[1680px] opacity-70">
+          <div className="z-index-100 absolute top-[800px] opacity-70">
             <Image src={WaveLine2} alt="Wave Line" />
           </div>
-          <div className="absolute top-[1947.95px] right-[-130px] bottom-0">
-            <Image src={StringOrnament} alt="String Ornament" />
+          <div className="absolute top-[990px] right-[-260px] bottom-0 h-[162.54px] w-full min-w-[476.28px]">
+            <Image
+              src={StringOrnament}
+              alt="String Ornament"
+              fill
+              className="object-contain"
+            />
           </div>
 
           <EventDescription />

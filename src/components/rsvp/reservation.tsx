@@ -15,7 +15,7 @@ const Reservation = () => {
   };
 
   return (
-    <div className="relative flex min-h-screen flex-col justify-center">
+    <div className="relative flex min-h-[627px] flex-col justify-center">
       <div className="flex flex-col items-center justify-center space-y-2.5 px-4 text-center text-white">
         <div className="m-8 flex flex-col space-y-3 font-carrig">
           <div className="text-xl">JOIN</div>
@@ -35,7 +35,7 @@ const Reservation = () => {
           </Link>
         </div>
       </div>
-      <div className="absolute bottom-[82px] opacity-70">
+      <div className="absolute bottom-[20px] opacity-70">
         <Image src={WaveLine1} alt="Wave Line" />
       </div>
     </div>
