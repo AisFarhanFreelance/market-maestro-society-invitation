@@ -1,12 +1,14 @@
 import Image from "next/image";
 
 import AnimatedElement from "../animation/animated-element";
+import BgDot1 from "/public/assets/images/bg-dot1.svg";
+import BgDot2 from "/public/assets/images/bg-dot2.svg";
 import GentlemanDress from "/public/assets/images/gentleman-dress.svg";
 import WomanDresscode from "/public/assets/images/woman-dresscode.svg";
 
 const Attendance = () => {
   return (
-    <div className="mt-30 min-h-screen">
+    <div className="relative min-h-screen">
       <div className="flex items-center justify-center text-center">
         <div className="m-14 inline-block space-y-4 text-white">
           <AnimatedElement>
@@ -50,6 +52,12 @@ const Attendance = () => {
             </div>
           </AnimatedElement>
         </div>
+      </div>
+      <div className="absolute top-[180px] right-[0px]">
+        <Image src={BgDot1} alt="Background Dot 1" width={77.4} height={159} />
+      </div>
+      <div className="absolute bottom-[30px] ">
+        <Image src={BgDot2} alt="Background Dot 2" />
       </div>
     </div>
   );

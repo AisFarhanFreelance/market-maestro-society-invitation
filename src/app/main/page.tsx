@@ -7,13 +7,14 @@ import EventDescription from "@/components/event-description/event-description";
 import MusicPlayer from "@/components/music-player/music-player";
 import Reservation from "@/components/rsvp/reservation";
 
-import BgDot1 from "/public/assets/images/bg-dot1.svg";
-import BgDot2 from "/public/assets/images/bg-dot2.svg";
+// import BgDot1 from "/public/assets/images/bg-dot1.svg";
+// import BgDot2 from "/public/assets/images/bg-dot2.svg";
 import BgDotLowOpacity1 from "/public/assets/images/bg-dot-low-opacity1.svg";
 import BiolaOrnament from "/public/assets/images/biola-ornament.svg";
 import StringOrnament2 from "/public/assets/images/string-ornament2.svg";
 import StringOrnament from "/public/assets/images/string-ornament.svg";
-import WaveLine1 from "/public/assets/images/wavey1.svg";
+
+// import WaveLine1 from "/public/assets/images/wavey1.svg";
 
 export default function Home() {
   return (
@@ -42,28 +43,6 @@ export default function Home() {
           </div>
           <div className="absolute top-[0px] left-[0px]">
             <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
-          </div>
-          <div className="absolute top-[1900px] right-[0px]">
-            <Image
-              src={BgDot1}
-              alt="Background Dot 1"
-              width={77.4}
-              height={159}
-            />
-          </div>
-          <div className="absolute top-[2190px] ">
-            <Image src={BgDot2} alt="Background Dot 2" />
-          </div>
-          <div className="absolute top-[650px] right-[0] bottom-0 h-[162.54px] w-full min-w-[476.28px]">
-            <Image src={WaveLine1} alt="Wave Line Ornament" width={500} />
-          </div>
-          <div className="absolute top-[1050px] right-[-260px] bottom-0 h-[162.54px] w-full min-w-[476.28px]">
-            <Image
-              src={StringOrnament}
-              alt="String Ornament"
-              fill
-              className="object-contain"
-            />
           </div>
 
           <EventDescription />

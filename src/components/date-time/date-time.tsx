@@ -1,12 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import AnimatedElement from "../animation/animated-element";
 import { Button } from "../ui/button";
+import StringOrnament from "/public/assets/images/string-ornament.svg";
 
 const DateTime = () => {
   return (
-    <div className="relative mt-56 flex min-h-screen w-full items-center justify-center px-12 text-white">
-      <div className="flex w-full flex-col items-center justify-center text-center">
+    <div className="relative flex min-h-screen w-full items-center justify-center px-12 text-white">
+      <div className="z-50 flex w-full flex-col items-center justify-center text-center">
         <AnimatedElement>
           <h2 className="mb-3 font-carrig text-xl">DATE & TIME</h2>
         </AnimatedElement>
@@ -56,6 +58,16 @@ const DateTime = () => {
             </div>
           </div>
         </AnimatedElement>
+      </div>
+
+      <div className="absolute top-52 -right-[220px] z-10 md:top-32 md:-right-[220px]">
+        <Image
+          src={StringOrnament}
+          alt="String Ornament"
+          width={350}
+          height={50}
+          className="object-cover "
+        />
       </div>
     </div>
   );
