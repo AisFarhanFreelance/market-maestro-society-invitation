@@ -268,7 +268,7 @@ const RsvpForm = () => {
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Input your Tiktok username here"
+                            placeholder="Ex: reksadana.syailendra"
                             className="text-[#BDBDBD]"
                             {...field}
                           />
@@ -289,7 +289,7 @@ const RsvpForm = () => {
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Input your Instagram username here"
+                            placeholder="Ex: reksadana.syailendra"
                             className="text-[#BDBDBD]"
                             {...field}
                           />
