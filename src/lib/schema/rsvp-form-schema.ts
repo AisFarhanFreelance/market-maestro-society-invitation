@@ -28,9 +28,11 @@ export const RsvpFormSchema = z.object({
       required_error: "Email is required",
     })
     .email("Invalid email adress"),
-  linkedinLink: z.string({
-    required_error: "LinkedIn profile is required",
-  }),
+  linkedinLink: z
+    .string({
+      required_error: "LinkedIn profile is required",
+    })
+    .min(1, "LinkedIn profile is required"),
   phoneNumber: z
     .string({
       required_error: "Phone number is required",

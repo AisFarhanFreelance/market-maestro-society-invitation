@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const DateTime = () => {
   return (
-    <div className="relative flex min-h-screen items-center justify-center px-12 text-white">
+    <div className="relative flex min-h-[844px] w-full items-center justify-center px-12 text-white">
       <div className="flex w-full flex-col items-center justify-center text-center">
         <AnimatedElement>
           <h2 className="mb-3 font-carrig text-xl">DATE & TIME</h2>
@@ -34,7 +34,7 @@ const DateTime = () => {
         <AnimatedElement>
           <div className="">
             <h2 className="mb-3 font-carrig text-xl">LOCATION</h2>
-            <div className="mb-3 font-avenir text-sm font-bold">
+            <div className="mb-3 font-avenir text-sm font-extrabold">
               Hotel Ashley Wahid Hasyim
             </div>
             <div className="mb-3 font-avenir text-sm">

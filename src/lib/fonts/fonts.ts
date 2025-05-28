@@ -27,6 +27,11 @@ const avenir = localFont({
       weight: "500",
       style: "normal",
     },
+    {
+      path: "../../../public/assets/fonts/avenir-font/AvenirLTStd-Heavy.otf",
+      weight: "800",
+      style: "normal",
+    },
   ],
   variable: "--font-avenir",
   display: "swap",
