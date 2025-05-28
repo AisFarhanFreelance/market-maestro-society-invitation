@@ -3,11 +3,12 @@ import Image from "next/image";
 import AnimatedElement from "../animation/animated-element";
 import CAKLogo from "/public/assets/images/cak-investmen-club-logo-white1.svg";
 import SyailendraLogo3 from "/public/assets/images/syailendra-logo3.svg";
+import WaveLine1 from "/public/assets/images/wavey1.svg";
 
 const EventDescription = () => {
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center">
-      <div className="mx-14 flex min-h-[843px] flex-col items-center justify-center text-center font-avenir text-sm text-white">
+      <div className="mx-14 flex min-h-screen flex-col items-center justify-center text-center font-avenir text-sm text-white">
         <AnimatedElement needScroll={false}>
           <div className="flex flex-col items-center justify-center">
             <Image
@@ -28,6 +29,9 @@ const EventDescription = () => {
             </div>
           </div>
         </AnimatedElement>
+      </div>
+      <div className="relative bottom-[-100px]">
+        <Image src={WaveLine1} alt="Wave Line Ornament" width={500} />
       </div>
     </div>
   );
