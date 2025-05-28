@@ -6,7 +6,7 @@ import WomanDresscode from "/public/assets/images/woman-dresscode.svg";
 
 const Attendance = () => {
   return (
-    <div className="min-h-[842px]">
+    <div className="mt-30 min-h-screen">
       <div className="flex items-center justify-center text-center">
         <div className="m-14 inline-block space-y-4 text-white">
           <AnimatedElement>
