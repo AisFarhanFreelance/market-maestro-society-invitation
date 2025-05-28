@@ -40,19 +40,14 @@ export default function Popup({ isOpen, onClose }: PopupProps) {
               RESERVED
             </div>
             <div className="mb-1 font-avenir text-sm text-[#2E4366]">
-              Thank you for joining the symphony. Your confirmation details will
-              be sent via Whatsapp/Emaill within 24 hours before the event.
+              Your confirmation details will be sent via Whatsapp/Emaill within
+              24 hours before the event.
             </div>
             <div className="mb-12 font-avenir text-sm text-[#2E4366]">
               Your personalized business card will be prepared based on the
               information provided.
             </div>
             <hr className="mb-3 border-solid border-[#2E4366]" />
-            <div className="mb-8 font-carrig text-xs text-[#2E4366]">
-              Syailendra Capital x CAK Investment Club
-              <br />
-              June 14th, 2025 | 17.30 - 21.00
-            </div>
             <div className="mb-3 font-avenir text-xs text-[#2E4366]">
               For any questions, reach out to:
             </div>

@@ -26,6 +26,14 @@ export default function Home() {
           <div className="absolute top-[1542px] left-[-217px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
           <div className="absolute top-[2399px] left-[-239px] h-[368px] w-[368px] rounded-full bg-[#F05625] opacity-85 blur-[250px]" />
 
+          <div className="absolute top-[0px] right-[0px]">
+            <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
+          </div>
+          <div className="absolute top-[0px] left-[0px]">
+            <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
+          </div>
+
+          <EventDescription />
           <div className="relative top-[-100px]">
             <div className="absolute right-[-52.73px]">
               <Image src={StringOrnament} alt="String Ornament" />
@@ -37,15 +45,6 @@ export default function Home() {
               <Image src={StringOrnament2} alt="String Ornament 2" />
             </div>
           </div>
-
-          <div className="absolute top-[0px] right-[0px]">
-            <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
-          </div>
-          <div className="absolute top-[0px] left-[0px]">
-            <Image src={BgDotLowOpacity1} alt="Background Dot Low Opacity 1" />
-          </div>
-
-          <EventDescription />
           {/* <div className="relative  h-[300px] w-full">
             <div className="absolute top-0 right-[-52.73px]">
               <Image src={StringOrnament} alt="String Ornament" />
@@ -61,7 +60,9 @@ export default function Home() {
           {/* <div className="  right-[0] bottom-0 h-[162.54px] w-full min-w-[476.28px]">
             <Image src={WaveLine1} alt="Wave Line Ornament" width={500} />
           </div> */}
-          <Attendance />
+          <div className="mb-[-50px]">
+            <Attendance />
+          </div>
           <Reservation />
           <MusicPlayer />
         </div>

@@ -243,7 +243,7 @@ const RsvpForm = () => {
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Ex : 62 812-1228-1287"
+                            placeholder="Ex : 0812-1228-1287"
                             className="text-[#BDBDBD]"
                             {...field}
                           />
@@ -268,7 +268,7 @@ const RsvpForm = () => {
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Ex : @reksadana.syailendra"
+                            placeholder="Input your Tiktok username here"
                             className="text-[#BDBDBD]"
                             {...field}
                           />
@@ -289,7 +289,7 @@ const RsvpForm = () => {
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Ex : @reksadana.syailendra"
+                            placeholder="Input your Instagram username here"
                             className="text-[#BDBDBD]"
                             {...field}
                           />
