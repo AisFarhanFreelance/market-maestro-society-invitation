@@ -13,7 +13,8 @@ import BgDotLowOpacity1 from "/public/assets/images/bg-dot-low-opacity1.svg";
 import BiolaOrnament from "/public/assets/images/biola-ornament.svg";
 import StringOrnament2 from "/public/assets/images/string-ornament2.svg";
 import StringOrnament from "/public/assets/images/string-ornament.svg";
-import WaveLine2 from "/public/assets/images/wave-line2.svg";
+
+// import WaveLine2 from "/public/assets/images/wavey2.svg";
 
 export default function Home() {
   return (
@@ -54,8 +55,13 @@ export default function Home() {
           <div className="absolute top-[2200px] left-[-22px]">
             <Image src={BgDot2} alt="Background Dot 2" />
           </div>
-          <div className="z-index-100 absolute top-[800px] opacity-70">
-            <Image src={WaveLine2} alt="Wave Line" />
+          <div className="absolute top-[990px] right-[-260px] bottom-0 h-[162.54px] w-full min-w-[476.28px]">
+            <img
+              src="/assets/images/wavey2.svg"
+              alt="Wave Line Ornament"
+              style={{ width: "100%" }}
+              className="object-contain"
+            />
           </div>
           <div className="absolute top-[990px] right-[-260px] bottom-0 h-[162.54px] w-full min-w-[476.28px]">
             <Image
