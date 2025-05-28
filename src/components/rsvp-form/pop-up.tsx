@@ -61,7 +61,7 @@ export default function Popup({ isOpen, onClose }: PopupProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="mb-3 rounded-full bg-[#F05625] px-7 py-3.5 text-base leading-[94%] text-white uppercase">
+              <Button className="mb-3 cursor-pointer rounded-full bg-[#F05625] px-7 py-3.5 text-base leading-[94%] text-white uppercase">
                 Elle <Whatsapp size="32" color="#FFFFFF" />
               </Button>
             </Link>

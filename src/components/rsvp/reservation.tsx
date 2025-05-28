@@ -24,7 +24,7 @@ const Reservation = () => {
         <div className="flex w-full items-center justify-center font-avenir">
           <Link href="/rsvp" onClick={handlePress}>
             <button
-              className={`rounded-full bg-[#F05625] px-7 py-3.5 leading-[94%] text-white uppercase transition-transform duration-150 ${
+              className={`cursor-pointer rounded-full bg-[#F05625] px-7 py-3.5 leading-[94%] text-white uppercase transition-transform duration-150 ${
                 isPressed
                   ? "scale-95 animate-pulse shadow-lg"
                   : "hover:scale-105 hover:bg-[#E04A1F] hover:shadow-xl"
