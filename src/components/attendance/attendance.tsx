@@ -56,7 +56,7 @@ const Attendance = () => {
       <div className="absolute top-[180px] right-[0px]">
         <Image src={BgDot1} alt="Background Dot 1" width={77.4} height={159} />
       </div>
-      <div className="absolute bottom-[30px] ">
+      <div className="absolute top-[500px] ">
         <Image src={BgDot2} alt="Background Dot 2" />
       </div>
     </div>

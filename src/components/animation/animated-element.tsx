@@ -19,7 +19,7 @@ const AnimatedElement = ({
       {...(needScroll
         ? {
             whileInView: { opacity: 1, y: 0 },
-            viewport: { amount: 1 },
+            viewport: { amount: 0.2 },
           }
         : {
             animate: { opacity: 1, y: 0 },

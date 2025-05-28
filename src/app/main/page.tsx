@@ -46,7 +46,21 @@ export default function Home() {
           </div>
 
           <EventDescription />
+          {/* <div className="relative  h-[300px] w-full">
+            <div className="absolute top-0 right-[-52.73px]">
+              <Image src={StringOrnament} alt="String Ornament" />
+            </div>
+            <div className="absolute top-[90px] right-0">
+              <Image src={BiolaOrnament} alt="Biola Ornament" />
+            </div>
+            <div className="absolute top-[150px] left-[-54px]">
+              <Image src={StringOrnament2} alt="String Ornament 2" />
+            </div>
+          </div> */}
           <DateTime />
+          {/* <div className="  right-[0] bottom-0 h-[162.54px] w-full min-w-[476.28px]">
+            <Image src={WaveLine1} alt="Wave Line Ornament" width={500} />
+          </div> */}
           <Attendance />
           <Reservation />
           <MusicPlayer />

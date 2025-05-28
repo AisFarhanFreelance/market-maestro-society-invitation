@@ -42,12 +42,7 @@ const MusicPlayer = () => {
 
   return (
     <>
-      <audio
-        src="/assets/music/Gillian-Hills-Zou-Bisou-Bisou-(Paroles-Lyrics)-TikTok-Song.mp3"
-        ref={audioRef}
-        loop
-        autoPlay
-      />
+      <audio src="/assets/music/music.mp3" ref={audioRef} loop autoPlay />
       <div
         className="fixed bottom-20 z-50 ml-2 cursor-pointer"
         onClick={togglePlay}
