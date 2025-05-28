@@ -1,8 +1,6 @@
 import FadeInWrapper from "@/components/animation/fade-in";
 import EventInvitation from "@/components/event-invitation/event-invitation";
 
-// test
-
 export default function Home() {
   return (
     <FadeInWrapper>
