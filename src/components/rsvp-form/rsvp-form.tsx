@@ -302,7 +302,7 @@ const RsvpForm = () => {
                 <div className="flex justify-center">
                   <div className="rounded-full bg-gradient-to-br from-[#2E4366]/60 to-[#2e4366]/34 p-[2px]">
                     <button
-                      className={`rounded-full bg-[#F05625] px-7 py-3.5 leading-[94%] text-white uppercase transition-transform duration-150 ${
+                      className={`cursor-pointer rounded-full bg-[#F05625] px-7 py-3.5 leading-[94%] text-white uppercase transition-transform duration-150 ${
                         isPressed
                           ? "scale-95 animate-pulse shadow-lg"
                           : "hover:scale-105 hover:bg-[#E04A1F] hover:shadow-xl"
