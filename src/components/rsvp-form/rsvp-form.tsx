@@ -109,7 +109,7 @@ const RsvpForm = () => {
                           htmlFor="fullName"
                           className="text-[#BDBDBD]"
                         >
-                          Full Name
+                          Full Name*
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -130,7 +130,7 @@ const RsvpForm = () => {
                           htmlFor="nickName"
                           className="text-[#BDBDBD]"
                         >
-                          Nick Name
+                          Nick Name*
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -151,7 +151,7 @@ const RsvpForm = () => {
                           htmlFor="occupation"
                           className="text-[#BDBDBD]"
                         >
-                          Occupation / Job Position
+                          Occupation / Job Position*
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -172,7 +172,7 @@ const RsvpForm = () => {
                           htmlFor="description"
                           className="text-[#BDBDBD]"
                         >
-                          Short Description of Yourself
+                          Short Description of Yourself*
                         </FormLabel>
                         <FormControl>
                           <Textarea
@@ -196,7 +196,7 @@ const RsvpForm = () => {
                     render={({ field }) => (
                       <FormItem>
                         <FormLabel htmlFor="email" className="text-[#BDBDBD]">
-                          Email
+                          Email*
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -218,7 +218,7 @@ const RsvpForm = () => {
                           htmlFor="linkedinLink"
                           className="text-[#BDBDBD]"
                         >
-                          LinkedIn
+                          LinkedIn*
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -239,7 +239,7 @@ const RsvpForm = () => {
                           htmlFor="phoneNumber"
                           className="text-[#BDBDBD]"
                         >
-                          Phone Number
+                          Phone Number*
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -264,7 +264,7 @@ const RsvpForm = () => {
                           htmlFor="tiktokUser"
                           className="text-[#BDBDBD]"
                         >
-                          Tiktok Username
+                          Tiktok Username*
                         </FormLabel>
                         <FormControl>
                           <Input
@@ -285,7 +285,7 @@ const RsvpForm = () => {
                           htmlFor="instagramUser"
                           className="text-[#BDBDBD]"
                         >
-                          Instagram Username
+                          Instagram Username*
                         </FormLabel>
                         <FormControl>
                           <Input
