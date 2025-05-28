@@ -11,14 +11,21 @@ const MusicPlayer = () => {
     const audio = audioRef.current;
     if (audio) {
       audio.volume = 0.5;
-      audio
-        .play()
-        .then(() => setIsPlaying(true))
-        .catch(() => setIsPlaying(false));
+
+      const tryPlay = () => {
+        audio
+          .play()
+          .then(() => setIsPlaying(true))
+          .catch(() => {
+            setIsPlaying(false);
+          });
+      };
+
+      document.addEventListener("click", tryPlay, { once: true });
 
       audio.loop = true;
     }
-  }, [audioRef]);
+  }, []);
 
   const togglePlay = () => {
     const audio = audioRef.current;
@@ -42,7 +49,7 @@ const MusicPlayer = () => {
         autoPlay
       />
       <div
-        className="fixed bottom-20 z-50 ml-8 cursor-pointer"
+        className="fixed bottom-20 z-50 ml-2 cursor-pointer"
         onClick={togglePlay}
       >
         <div className="relative flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-[#F05625] bg-white text-[#F05625]">
