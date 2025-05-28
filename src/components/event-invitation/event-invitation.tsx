@@ -17,13 +17,13 @@ const EventInvitation = () => {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-contain bg-center text-center">
-      <AnimatedElement>
+      <AnimatedElement delay={0.5} needScroll={false}>
         <Image src={SyailendraLogo} alt="Syailendra Logo" className="mb-5" />
         <Link href="/main" onClick={handlePress}>
           <button
             className={`rounded-full bg-[#F05625] px-7 py-3.5 font-carrig leading-[94%] text-white uppercase transition-transform duration-150 ${
               isPressed
-                ? "scale-95 animate-pulse shadow-lg"
+                ? "scale-95 animate-ping shadow-lg"
                 : "hover:scale-105 hover:bg-[#E04A1F] hover:shadow-xl"
             }`}
           >
